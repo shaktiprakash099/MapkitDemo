@@ -21,19 +21,47 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="kkR-bW-Ic7">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="728"/>
                             </mapView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pin" translatesAutoresizingMaskIntoConstraints="NO" id="K0r-cQ-AkZ">
+                                <rect key="frame" x="172.66666666666666" y="371" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="Pfv-Od-FhD"/>
+                                    <constraint firstAttribute="height" constant="30" id="Zd2-9O-f1I"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="jwT-XU-5G5">
+                                <rect key="frame" x="0.0" y="738" width="375" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="nDn-ZM-7gS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kkR-bW-Ic7" secondAttribute="trailing" id="23V-DU-lNa"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kkR-bW-Ic7" secondAttribute="bottom" constant="50" id="3NN-Oe-YZb"/>
+                            <constraint firstItem="jwT-XU-5G5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4Gx-Zp-GYV"/>
+                            <constraint firstItem="K0r-cQ-AkZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-20" id="4Xh-MW-hbk"/>
                             <constraint firstItem="kkR-bW-Ic7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GZf-YC-Rpo"/>
                             <constraint firstItem="kkR-bW-Ic7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="HaD-Vq-QMj"/>
+                            <constraint firstItem="K0r-cQ-AkZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XkN-Im-sTm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jwT-XU-5G5" secondAttribute="bottom" id="dIa-4n-qEg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jwT-XU-5G5" secondAttribute="trailing" id="wZ8-Fo-zKH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="addressLabel" destination="jwT-XU-5G5" id="OU5-eo-OrF"/>
+                        <outlet property="mapView" destination="kkR-bW-Ic7" id="zvD-z6-dh5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="Pin" width="16" height="46"/>
+    </resources>
 </document>
