@@ -37,6 +37,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gxg-Bi-cxk">
+                                <rect key="frame" x="315" y="678" width="40" height="40"/>
+                                <color key="backgroundColor" red="0.18198148906230927" green="0.69426733255386353" blue="0.53024792671203613" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="2s0-u9-yYy"/>
+                                    <constraint firstAttribute="width" constant="40" id="Avw-4E-eqJ"/>
+                                </constraints>
+                                <state key="normal" title="GO">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="goDirectionButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TvY-Ai-BQv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -44,6 +58,8 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kkR-bW-Ic7" secondAttribute="bottom" constant="50" id="3NN-Oe-YZb"/>
                             <constraint firstItem="jwT-XU-5G5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4Gx-Zp-GYV"/>
                             <constraint firstItem="K0r-cQ-AkZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-20" id="4Xh-MW-hbk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gxg-Bi-cxk" secondAttribute="trailing" constant="20" id="B9y-iL-eb9"/>
+                            <constraint firstItem="jwT-XU-5G5" firstAttribute="top" secondItem="gxg-Bi-cxk" secondAttribute="bottom" constant="20" id="EIf-j5-OQ3"/>
                             <constraint firstItem="kkR-bW-Ic7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GZf-YC-Rpo"/>
                             <constraint firstItem="kkR-bW-Ic7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="HaD-Vq-QMj"/>
                             <constraint firstItem="K0r-cQ-AkZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XkN-Im-sTm"/>
@@ -53,6 +69,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="Gobutton" destination="gxg-Bi-cxk" id="Kpf-aX-va7"/>
                         <outlet property="addressLabel" destination="jwT-XU-5G5" id="OU5-eo-OrF"/>
                         <outlet property="mapView" destination="kkR-bW-Ic7" id="zvD-z6-dh5"/>
                     </connections>
